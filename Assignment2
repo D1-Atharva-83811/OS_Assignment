@@ -1,0 +1,137 @@
+Q1
+sunbeam@atharva:~$ ls -lt
+total 7656
+-rw-rw-r-- 1 sunbeam sunbeam      14 Jun  1 18:33 random.txt
+drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 18:28 random
+drwxr-xr-x 8 sunbeam sunbeam    4096 Jun  1 18:04 Desktop
+drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 17:13 OS
+drwx------ 5 sunbeam sunbeam    4096 Jun  1 16:50 snap
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 16:50 Downloads
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Documents
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Music
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Pictures
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Public
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Templates
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Videos
+-rw-r--r-- 1 sunbeam sunbeam 7789985 May 31 02:48 dotnetExam.zip
+=======================================================================================================
+Q2
+sunbeam@atharva:~$ ls -lS
+total 7656
+-rw-r--r-- 1 sunbeam sunbeam 7789985 May 31 02:48 dotnetExam.zip
+drwxr-xr-x 8 sunbeam sunbeam    4096 Jun  1 18:04 Desktop
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Documents
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 16:50 Downloads
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Music
+drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 17:13 OS
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Pictures
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Public
+drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 18:28 random
+drwx------ 5 sunbeam sunbeam    4096 Jun  1 16:50 snap
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Templates
+drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Videos
+-rw-rw-r-- 1 sunbeam sunbeam      14 Jun  1 18:33 random.txt
+=======================================================================================================
+Q3
+sunbeam@atharva:~$ ls -li
+total 7656
+4456606 drwxr-xr-x 8 sunbeam sunbeam    4096 Jun  1 18:04 Desktop
+4456611 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Documents
+4459647 -rw-r--r-- 1 sunbeam sunbeam 7789985 May 31 02:48 dotnetExam.zip
+4456608 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 16:50 Downloads
+4456612 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Music
+4458961 drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 17:13 OS
+4456613 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Pictures
+4456610 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Public
+4473051 drwxrwxr-x 2 sunbeam sunbeam    4096 Jun  1 18:28 random
+4472566 -rw-rw-r-- 1 sunbeam sunbeam      14 Jun  1 18:33 random.txt
+4456454 drwx------ 5 sunbeam sunbeam    4096 Jun  1 16:50 snap
+4456609 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Templates
+4456614 drwxr-xr-x 2 sunbeam sunbeam    4096 Jun  1 00:34 Videos
+=======================================================================================================
+Q4
+sunbeam@atharva:~$ ls -l Desktop
+total 28
+drwxr-xr-x 2 sunbeam sunbeam 4096 Apr 21 19:03  amay
+drwxr-xr-x 5 sunbeam sunbeam 4096 May 23 02:00  CDAC
+drwxr-xr-x 2 sunbeam sunbeam 4096 May 23 00:08 'CDAC PROJECT'
+drwxr-xr-x 3 sunbeam sunbeam 4096 Mar 24 19:10  DOCS
+drwxr-xr-x 9 sunbeam sunbeam 4096 Jun  1 18:04  GIT
+-rw-r--r-- 1 sunbeam sunbeam  423 Mar 22 14:40 'git token'
+drwxr-xr-x 4 sunbeam sunbeam 4096 May 23 01:46  hackathon
+=======================================================================================================
+Q5
+sunbeam@atharva:~$ cat>file.txt
+thakare
+atharva
+sunbeam@atharva:~$ cat file.txt
+thakare
+atharva
+sunbeam@atharva:~$ cat>> file.txt
+balewadi, pune
+sunbeam@atharva:~$ cat file.txt
+thakare
+atharva
+balewadi, pune
+=======================================================================================================
+Q6
+sunbeam@atharva:~$ touch file.txt -t 2306130000
+=======================================================================================================
+Q7
+sunbeam@atharva:~$ touch file.txt -t 2306130000
+sunbeam@atharva:~$ mkdir one
+sunbeam@atharva:~$ cd one
+sunbeam@atharva:~/one$ touch 1.txt 11.txt 111.txt
+sunbeam@atharva:~/one$ mkdir two
+sunbeam@atharva:~/one$ cd two
+sunbeam@atharva:~/one/two$ touch 2.txt 22.txt 222.txt
+sunbeam@atharva:~/one/two$ mkdir three
+sunbeam@atharva:~/one/two$ cd three
+sunbeam@atharva:~/one/two/three$ touch 3.txt 33.txt 333.txt
+sunbeam@atharva:~/one/two/three$ mkdir four
+sunbeam@atharva:~/one/two/three$ cd four
+sunbeam@atharva:~/one/two/three/four$ touch 4.txt 44.txt 444.txt
+sunbeam@atharva:~/one/two/three/four$ mkdir five
+sunbeam@atharva:~/one/two/three/four$ cd five
+sunbeam@atharva:~/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+sunbeam@atharva:~/one/two/three/four/five$ cd ~
+=======================================================================================================
+Q8
+sunbeam@atharva:~$ ls -ls one/two/three/four/five
+total 0
+0 -rw-rw-r-- 1 sunbeam sunbeam 0 Jun  1 19:07 555.txt
+0 -rw-rw-r-- 1 sunbeam sunbeam 0 Jun  1 19:07 55.txt
+0 -rw-rw-r-- 1 sunbeam sunbeam 0 Jun  1 19:07 5.txt
+
+sunbeam@atharva:~$ cat>> one/two/three/four/44.txt
+atharva thakare
+sunbeam@atharva:~$ cat one/two/three/four/44.txt
+atharva thakare
+
+sunbeam@atharva:~$ rm one/two/three/four/five/555.txt
+
+sunbeam@atharva:~$ cd one/two/three/four/five
+sunbeam@atharva:~/one/two/three/four/five$ 
+
+sunbeam@atharva:~/one/two/three/four/five$ cat>> ../../3.txt
+cdac dac
+sunbeam@atharva:~/one/two/three/four/five$ cat ../../3.txt
+cdac dac
+
+sunbeam@atharva:~/one/two/three/four/five$ ls -ls ../../../
+total 4
+0 -rw-rw-r-- 1 sunbeam sunbeam    0 Jun  1 19:07 222.txt
+0 -rw-rw-r-- 1 sunbeam sunbeam    0 Jun  1 19:07 22.txt
+0 -rw-rw-r-- 1 sunbeam sunbeam    0 Jun  1 19:07 2.txt
+4 drwxrwxr-x 3 sunbeam sunbeam 4096 Jun  1 19:07 three
+
+sunbeam@atharva:~/one/two/three/four/five$ rm ../../../222.txt
+
+sunbeam@atharva:~/one$ rm -r  two/three/four/five
+
+sunbeam@atharva:~/one$ rm -r  two/three/four
+
+sunbeam@atharva:~/one$ cd ~
+=======================================================================================================
+Q9
+sunbeam@atharva:~$ touch one/two/three/3.txt -t 1006130000
