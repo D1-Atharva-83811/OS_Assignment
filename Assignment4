@@ -1,0 +1,57 @@
+i. 
+sunbeam@atharva:~/OS$ wc data.txt
+ 11  25 150 data.txt
+=======================================================================================================
+ii. 
+sunbeam@atharva:~/OS$ egrep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+=======================================================================================================
+iii.
+sunbeam@atharva:~/OS$ egrep "file$" data.txt
+In Linux everything is file
+=======================================================================================================
+iv.
+sunbeam@atharva:~/OS$ egrep -v "files" data.txt
+Linux is open source.
+In Linux everything is file
+=======================================================================================================
+v.
+sunbeam@atharva:~/OS$ egrep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+=======================================================================================================
+vi.
+sunbeam@atharva:~/OS$ egrep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+=======================================================================================================
+vii.
+sunbeam@atharva:~/OS$ egrep "\.$" data.txt
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+=======================================================================================================
+viii.
+sunbeam@atharva:~/OS$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+=======================================================================================================
+ix.
+sunbeam@atharva:~/OS$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+=======================================================================================================
+x.
+sunbeam@atharva:~/OS$ head -5 data.txt | tail +3
+files have permissions.
+files have inode no.
+files have size.
+=======================================================================================================
+
