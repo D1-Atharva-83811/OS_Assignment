@@ -1,0 +1,206 @@
+Q1
+sunbeam@atharva:~/OS$ ls -a
+.  ..  email.txt  file.sh  file.txt  one  random  random.txt
+=======================================================================================================
+Q2
+sunbeam@atharva:~/OS$ rename 's/\.txt/.html/' *.txt
+=======================================================================================================
+Q3
+sunbeam@atharva:~/OS$ ln -s random.txt r
+=======================================================================================================
+Q4
+sunbeam@atharva:~/OS$ ln atharva.txt athar
+=======================================================================================================
+Q5
+sunbeam@atharva:~/OS$ stat random.txt
+  File: random.txt
+  Size: 14        	Blocks: 8          IO Block: 4096   regular file
+Device: 10307h/66311d	Inode: 4472566     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+Access: 2024-06-01 18:34:22.626329498 +0530
+Modify: 2024-06-01 18:33:38.566257235 +0530
+Change: 2024-06-02 19:09:35.627514888 +0530
+ Birth: 2024-06-01 18:18:14.729669530 +0530 =======================================================================================================
+Q6
+sunbeam@atharva:~/OS$ touch random.txt -t 06130000
+sunbeam@atharva:~/OS$ stat random.txt
+  File: random.txt
+  Size: 14        	Blocks: 8          IO Block: 4096   regular file
+Device: 10307h/66311d	Inode: 4472566     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+Access: 2024-06-13 00:00:00.000000000 +0530
+Modify: 2024-06-13 00:00:00.000000000 +0530
+Change: 2024-06-03 15:09:44.677682081 +0530
+ Birth: 2024-06-01 18:18:14.729669530 +0530
+=======================================================================================================
+Q7
+sunbeam@atharva:~/OS$ touch atharva.txt
+=======================================================================================================
+Q8
+sunbeam@atharva:~/OS$ tail +5 atharva.txt
+5
+6
+7
+8
+9
+0
+=======================================================================================================
+Q9
+sunbeam@atharva:~/OS$ init 0
+=======================================================================================================
+Q10
+sunbeam@atharva:~/OS$ init 6
+=======================================================================================================
+Q12
+sunbeam@atharva:~/OS$ whoami
+sunbeam
+=======================================================================================================
+Q13
+sunbeam@atharva:~/OS$ tty
+/dev/pts/0
+=======================================================================================================
+Q14
+sunbeam@atharva:~$ who am i
+sunbeam	tty4	2024-06-03 15:13
+=======================================================================================================
+Q15
+sunbeam@atharva:~/OS$ users
+sunbeam sunbeam
+=======================================================================================================
+Q16
+sunbeam@atharva:~/OS$ who
+sunbeam  :0           2024-06-03 14:16 (:0)
+sunbeam  tty4         2024-06-03 15:13
+=======================================================================================================
+Q17
+sunbeam@atharva:~/OS$ grep "atharva" random.txt
+atharva
+sunbeam@atharva:~/OS$ egrep "h" random.txt
+hello
+atharva
+sunbeam@atharva:~/OS$ fgrep "h" random.txt
+hello
+atharva
+=======================================================================================================
+Q18
+sunbeam@atharva:~/OS$ chmod 400 random.txt
+sunbeam@atharva:~/OS$ ls -l 
+total 28
+-rw-rw-r-- 1 sunbeam sunbeam   20 Jun  3 15:11 atharva.txt
+-rw-rw-r-- 1 sunbeam sunbeam  117 Jun  1 17:13 email
+-rw-rw-r-- 1 sunbeam sunbeam   31 Jun 13  2023 file
+-rw-rw-r-- 1 sunbeam sunbeam   91 Jun  1 17:04 file.sh
+drwxrwxr-x 3 sunbeam sunbeam 4096 Jun  1 19:06 one
+drwxrwxr-x 2 sunbeam sunbeam 4096 Jun  1 18:28 random
+-r-------- 1 sunbeam sunbeam   14 Jun 13  2024 random.txt
+=======================================================================================================
+Q19
+sunbeam@atharva:~/OS$ ls -l 
+total 28
+-rw-rw-r-- 1 sunbeam sunbeam   20 Jun  3 15:11 atharva.txt
+-rw-rw-r-- 1 sunbeam sunbeam  117 Jun  1 17:13 email
+-rw-rw-r-- 1 sunbeam sunbeam   31 Jun 13  2023 file
+-rw-rw-r-- 1 sunbeam sunbeam   91 Jun  1 17:04 file.sh
+drwxrwxr-x 3 sunbeam sunbeam 4096 Jun  1 19:06 one
+drwxrwxr-x 2 sunbeam sunbeam 4096 Jun  1 18:28 random
+-rwxrwxrwx 1 sunbeam sunbeam   14 Jun 13  2024 random.txt
+=======================================================================================================
+Q20
+sunbeam@atharva:~/OS$ wc -w random.txt | cat>output.txt
+sunbeam@atharva:~/OS$ cat output.txt
+2 random.txt
+=======================================================================================================
+Q21
+sunbeam@atharva:~/OS$ who | wc -w
+9
+=======================================================================================================
+Q22
+sunbeam@atharva:~/OS$ cat atharva.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+11
+12
+13
+14
+15
+16
+1
+sunbeam@atharva:~/OS$ head -10 atharva.txt | tail +5
+5
+6
+7
+8
+9
+0
+=======================================================================================================
+Q23
+sunbeam@atharva:~/OS$ sort atharva.txt | uniq
+0
+1
+11
+12
+13
+14
+15
+16
+2
+3
+4
+5
+6
+7
+8
+9
+=======================================================================================================
+Q24
+=======================================================================================================
+Q25
+sunbeam@atharva:~/OS$ ls | sort
+atharva.txt
+email
+file
+file.sh
+one
+output.txt
+random
+random.txt
+=======================================================================================================
+Q26
+sunbeam@atharva:~/OS$ ls | sort | wc -l
+8
+=======================================================================================================
+Q27
+sunbeam@atharva:~$ ls -ap | grep -v / | grep "^\."  
+.bash_history
+.bash_logout
+.bashrc
+.gitconfig
+.lesshst
+.profile
+.sudo_as_admin_successful
+.viminfo
+=======================================================================================================
+Q28
+sunbeam@atharva:~/OS$ cat random.txt | tr "a-z" "A-Z"
+HELLO
+ATHARVA
+=======================================================================================================
+Q29
+sunbeam@atharva:~/OS$ ls -l | tr -s " " "$" | cut -d "$" -f3,5,9 | tr "$" " "
+
+sunbeam 40 atharva.txt
+sunbeam 117 email
+sunbeam 31 file
+sunbeam 91 file.sh
+sunbeam 4096 one
+sunbeam 13 output.txt
+sunbeam 4096 random
+sunbeam 14 random.txt
